@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 
+/*---------- Logo et fond de page ----------*/
 main{
     background-color: black;
     height: 700px;
@@ -14,50 +15,67 @@ main{
 }
 .photo{
     background-color: rgb(255, 255, 255);
-    width: 200px;
-    height: 200px;
+    width: 100px;
+    height: 100px;
     border-radius: 50%;
     position: relative;
-    top: 15%;
-    left: 25%;
+    top: 5%;
+    left: 5%;
     z-index: 3;
     object-fit: contain;
 }
-.pres{
-    font-family: Arial, Helvetica, sans-serif;  
-    color: #4e2b22;  
-    padding-left: 10px;
-    padding-top: 30px;
+
+/* ------------Centre de page------------------ */
+
+.menu{
+    display: flex;
+    flex-direction: row;
+    width: 900px;
+    height: 500px;
+    background-color: rgba(255, 255, 255, 0.822);
+    position: relative;
+    top: 5%;
+    left: 26%;
+    justify-content: space-around;
+    border-radius: 1%;
+}
+.information{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 400px;;
+}
+p, .menu{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #4e2b22;
     font-size: 20px;
+}
+.np, .et{
+    
+    display: flex;
+    flex-direction: row;
+      
+}
+.formulaire{
+    width: 600px;
+    margin-top: 4%;
+    margin-left: 3%;
+}
+.nom, .pre, .email, .tel{
+    display: flex;
+    flex-direction: column;
     
 }
-h2{
-    padding-left: 55px;
-    padding-top: 50px;
-    color: #4e2b22;  
-    font-family: Arial, Helvetica, sans-serif;
+.nom, .email{
+    width: 250px;
+}
+.mess, .button{
+    margin-top: 4%;
+}
+#nom, #prenom, #email, #telephone{
+    width: 150px;
 }
 
-.text{
-    background-color: rgba(255, 255, 255, 0.836);
-    width: 700px;
-    height: 350px;
-    border: #7e663f solid 5px;
-    position: absolute;
-    left: 32%;
-    z-index: 2;
-}
-
-.rond{
-    background-color: #4d3721;
-    width: 230px;
-    height: 230px;
-    border-radius: 50%;
-    position: absolute;
-    z-index: 1;
-    top: 9.45%;
-    left: 24.25%;
-}
 
 
 /* ----------------Footer-------------------- */
