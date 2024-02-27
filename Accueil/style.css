@@ -3,7 +3,10 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+body{
+    width: 100vw;
+    height: 70vh;
+}
 main{
     background-color: black;
     height: 700px;
@@ -11,15 +14,19 @@ main{
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    position: relative;
+    /* width: 100vw;
+    height: 70vh; */
+    /* position: relative; */
 }
 .photo{
     background-color: rgb(255, 255, 255);
     width: 200px;
     height: 200px;
     border-radius: 50%;
-    position: relative;
+    position: absolute;
     top: 15%;
-    left: 25%;
+    left: 15%;
     z-index: 3;
     object-fit: contain;
 }
@@ -45,6 +52,7 @@ h2{
     border: #7e663f solid 5px;
     position: absolute;
     left: 32%;
+    top: 35%;
     z-index: 2;
 }
 
@@ -55,8 +63,16 @@ h2{
     border-radius: 50%;
     position: absolute;
     z-index: 1;
-    top: 9.45%;
-    left: 24.25%;
+    top: 12%;
+    left: 13%;
+}
+.centre{
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    translate: -50% -50%;
+    width: 700px;
+    height: 500px;
 }
 
 
