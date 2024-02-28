@@ -5,7 +5,7 @@
 }
 body{
     width: 100vw;
-    height: 70vh;
+    height:70vh;
 }
 main{
     background-color: black;
@@ -17,7 +17,6 @@ main{
     position: relative;
     /* width: 100vw;
     height: 70vh; */
-    /* position: relative; */
 }
 .photo{
     background-color: rgb(255, 255, 255);
@@ -64,7 +63,7 @@ h2{
     position: absolute;
     z-index: 1;
     top: 12%;
-    left: 13%;
+    left: 12.8%;
 }
 .centre{
     position: absolute;
@@ -77,24 +76,28 @@ h2{
 
 
 /* ----------------Footer-------------------- */
+footer{
+    width: 100vw;
+    height: 25.8vh;
+    position: relative;
+}
 .comp, .exp, .portf, .cont{
-    /* display: inline-block; */
     width: 250px;
     height: 70px;
     background-color: #764a24;
-    /* text-align: center;    */
     color: white; 
     font-size:20px;
     text-align: center;
     padding-top: 25px;
-    position: relative;
-    top: 120%;
-    left: 180%;
     font-family: Arial, Helvetica, sans-serif;
 }
 .onglet{
     display: flex;
     flex-direction: row;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
 }
 .comp{
     border-radius:15px 0 0 15px;
