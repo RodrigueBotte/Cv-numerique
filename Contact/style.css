@@ -108,7 +108,7 @@ footer{
     height: 25.8vh;
     position: relative;
 }
-.comp, .exp, .portf, .cont{
+.comp, .prof, .portf, .cont{
     width: 250px;
     height: 70px;
     background-color: #764a24;
@@ -126,7 +126,7 @@ footer{
     left: 50%;
     translate: -50% -50%;
 }
-.comp{
+.prof{
     border-radius:15px 0 0 15px;
 }
 .cont{

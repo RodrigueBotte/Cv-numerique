@@ -32,51 +32,17 @@ main{
     background-repeat: no-repeat;
     position: relative;
 }
-.competence{
+.centre{
     display: flex;
-    flex-direction: row;
     justify-content: space-evenly;
-    
-}
-img{
-    width: 350px;
-}
-i{
-    font-size: 125px;
-}
-.langage{
-    width: 700px;
-    height: 500px;
-    background-color: rgb(255, 255, 255, 0.822);
-    border-radius: 10px;    
-    display: grid;
-    grid-template-columns: 2 1fr;
-    grid-template-rows: 2 1fr;
+    flex-direction: row;
+    margin-top: 8%;
     text-align: center;
-    align-items: center;
 }
-.html{
-    grid-column: 1;
-    grid-row: 1;
-}
-.css{
-    grid-column: 2;
-    grid-row: 1;
-}
-.dl{
-    padding: 10px;
-    padding-left: 55px;
-    padding-right: 55px;
-    background-color: #774d3bd7;
+.centre p{
     color: white;
-    font-size: 18px;
+    font-size: 19px;
     font-family: Arial, Helvetica, sans-serif;
-    border-radius: 10px;
-}
-.cv{
-    text-align: center;
-    display: flex;
-    flex-direction: column;
 }
 
 /* ----------------Footer-------------------- */
