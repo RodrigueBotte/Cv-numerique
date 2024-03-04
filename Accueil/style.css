@@ -101,6 +101,8 @@ footer{
     top: 50%;
     left: 50%;
     translate: -50% -50%;
+    box-shadow: 5px 5px 5px #4d3721;
+    border-radius: 18px;
 }
 .prof{
     border-radius:15px 0 0 15px;
@@ -110,4 +112,9 @@ footer{
 }
 a{
     text-decoration: none;
+}
+
+@font-face {
+    font-family: Expletus;
+    src: url(../Competences/image/ExpletusSans-Italic-VariableFont_wght.ttf);
 }

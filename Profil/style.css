@@ -48,10 +48,12 @@ main{
 h2{
     text-align: center;
     font-size: 40px;
+    font-family: Expletus;
 }
 .pres p{
     padding: 2%;
-    font-size: 22px;
+    font-size: 18px;
+    font-family: Expletus;
 }
 
 
@@ -69,7 +71,7 @@ footer{
     font-size:20px;
     text-align: center;
     padding-top: 25px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Expletus;
 }
 .onglet{
     display: flex;
@@ -87,4 +89,8 @@ footer{
 }
 a{
     text-decoration: none;
+}
+@font-face {
+    font-family: Expletus;
+    src: url(../Competences/image/ExpletusSans-Italic-VariableFont_wght.ttf);
 }
