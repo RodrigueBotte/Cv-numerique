@@ -124,3 +124,68 @@ a{
     font-family: Expletus;
     src: url(../Competences/image/ExpletusSans-Italic-VariableFont_wght.ttf);
 }
+@media screen and (max-width: 600px) {
+    body{
+        width: 120vw;
+        height: 120vh;
+    }
+    main{
+        width: 120vw;
+        height: 65vh;
+        background-size: cover;
+        background-position: center;
+    }
+    .centre{
+        width: 100vw;
+        height: 50vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        top: 0;
+        left: 0;
+        translate: 0;
+    }
+    .photo{
+        width: 100px;
+        height: 100px;
+    }
+    .text{
+        width: 50vw;
+        height: 40vh;
+        top: 28%;
+        left: 28%;
+    }
+    .pres{
+        font-size: 1rem;
+    }
+    h2{
+        font-size: 2rem;
+    }
+    .rond{
+        width: 110px;
+        height: 110px;
+        background-color: transparent;
+    }
+    footer{
+        width: 100vw;
+        height: 70vw;
+    }
+    .onglet{
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        width: 100vw;
+        height: 70vw;
+        box-shadow: none;
+        border-radius: 0;
+        translate:0;
+        top: 0;
+        left: 0;
+    }
+    .comp, .prof, .portf, .cont{
+        border-radius: 15px;
+        width: 170px;
+        height: 50px;
+        padding-top: 0;
+    }
+}
