@@ -1,0 +1,19 @@
+{
+    "langue": [
+        {
+            "h1": "Bonjour tout le monde",
+            "h2": "Bienvenue dans le monde de Json",
+            "p": "C'est vraiment pas facile"
+        },
+        {
+            "h1": "Hello everyone",
+            "h2": "Welcome in the json's world",
+            "p": "It's not very easy"
+        },
+        {
+            "h1": "cześć wszystkim",
+            "h2": "Witamy w świecie Jsona",
+            "p": "To naprawdę nie jest łatwe"
+        }
+    ]
+}

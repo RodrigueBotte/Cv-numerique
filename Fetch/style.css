@@ -1,0 +1,26 @@
+*, ::before, ::after
+{
+    margin: 0;
+    padding :0;
+    box-sizing: border-box;
+}
+select{
+    margin: 20px 20px;
+}
+
+#nom{
+    text-decoration: none;
+    cursor: pointer;
+}
+.heros{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 50vh;
+    /* border: 1px solid black; */
+}
+.hero[i]{
+    width: 90px;
+    display: flex;
+    flex-direction: column;
+    aspect-ratio: 1/1;
+}
