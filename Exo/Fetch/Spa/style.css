@@ -1,0 +1,27 @@
+*, ::before, ::after
+{
+    margin: 0;
+    padding :0;
+    box-sizing: border-box;
+}
+/* main{
+    width: 100vw;
+    height: 90vh;
+} */
+
+.feu{
+    background-color: gray;
+    width: 200px;
+    height:400px;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-items: center;
+}
+.rond1, .rond2, .rond3{
+    background-color: black;
+    width: 120px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+}
