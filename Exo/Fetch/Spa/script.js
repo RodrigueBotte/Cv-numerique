@@ -49,13 +49,17 @@ function rondC() {
     })
 }
 
+let n=0;
 function feuTri() {
-    rondC().then(rond4=>{
-        rondB().then(rond5=>{
-            rondA().then(rond6=>{
-                return feuTri
+        rondC().then(rond4=>{
+            rond1.style.backgroundColor = "black"
+            rondB().then(rond5=>{
+                rond3.style.backgroundColor = "black"
+                rondA().then(rond6=>{
+                    rond2.style.backgroundColor = "black"
             })
         })
     })
 }
-feuTri()
+
+ feuTri();
