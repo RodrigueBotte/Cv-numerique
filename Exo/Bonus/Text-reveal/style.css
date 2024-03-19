@@ -1,0 +1,17 @@
+*, ::before, ::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+main{
+    width: 30vw;
+    position: relative;
+}
+.reset{
+    position: absolute;
+    right: 0;
+}
+span{
+    color: transparent;
+    /* transition: 1s; */
+}
