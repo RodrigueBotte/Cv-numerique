@@ -57,6 +57,7 @@ function feuTri() {
                 rond3.style.backgroundColor = "black"
                 rondA().then(rond6=>{
                     rond2.style.backgroundColor = "black"
+                    feuTri()
             })
         })
     })
