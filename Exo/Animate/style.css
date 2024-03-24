@@ -1,0 +1,61 @@
+*, ::before, ::after
+{
+    margin: 0;
+    padding :0;
+    box-sizing: border-box;
+}
+
+div{
+    display: flex;
+    position: relative;
+}
+span{
+    background-color: black;
+    width: 0.4rem;
+    height: 2rem;
+    cursor: pointer;
+}
+.span1{
+    position: absolute;    
+    left: 180px;
+}
+.span2{
+    position: absolute;
+    left: 120px;
+}
+.dev1{
+    display: flex;
+    transition: all 1s ease-in;
+    opacity: 1
+}
+.web1{
+    position: relative;
+    left: 0px;
+    width: 80px;
+    /* transition: all 2s ease-in;
+    opacity: 1 */
+}
+.h1{
+    left: 190px;
+    width: 180px;
+    position: relative;
+    transition: all 2s ease;
+
+}
+.dev, .nom{
+    overflow-x: hidden;
+}
+.dev2{
+    position: relative;
+    left: 190px;
+    width: 120px
+}
+.nom{
+    transition: all 1s ease;
+    opacity: 0
+}
+.web2{
+    position: relative;
+    left: 0px;
+    width: 130px;
+}
