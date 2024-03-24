@@ -1,0 +1,24 @@
+*, ::before, ::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#img1, #img2, #img3{
+    width: 35vw;
+    height: 40vh;
+    position: relative;
+}
+.img1, .img2, .img3{
+    height: 100%;
+    width: 100%;
+}
+.zoom1, .zoom2, .zoom3{
+    width: 35px;
+    position: absolute;
+    background-color: rgba(255, 254, 254, 0.37);
+    cursor: pointer;
+    z-index: 1;
+    left: 100%;
+    top: 100%;
+    transform: translate( -100%, -100%);
+}
