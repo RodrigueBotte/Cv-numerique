@@ -1,12 +1,30 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src="./script.js" defer></script>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="script.js" defer></script>
+    <style>
+      *,
+      ::before,
+      ::after {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+    </style>
+    <title>Exo canvas</title>
+  </head>
+  <body>
+    <div>
+      <input type="color"></button>
+      <label for="size">Taille de brosse</label>
+      <select name="size" id="size"></select>
+      <button id="back">&#8592</button>
+      <button id="forw">&#8594</button>
+      <button id="save">Sauvergarder</button>
+      <button></button>
+    </div>
     <canvas></canvas>
-</body>
+  </body>
 </html>
