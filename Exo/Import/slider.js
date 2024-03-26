@@ -28,14 +28,16 @@ export function affiche(images) {
         const ctn = document.createElement("button")
         // const div = document.createElement("div")
         main.append(ctn)
-        ctn.classList.add("machin")
+        ctn.classList.add("machin", "rond"+y)
+        // const rond = document.querySelector(".rond"+y)
+        // console.log(rond);
         div.appendChild(ctn)
         ctn.addEventListener("click", ()=>{
             img.src = `${images[y]}`
         })
-        // ctn.addEventListener("input", ()=>{
-        //     ctn.style.backgroundColor = "rgba(128, 128, 128)"
-        // })
+        // if(img.src = `${images[y]}`){
+        //     document.querySelector(".rond"+`${y}`).style.backgroundColor = "rgba(128, 128, 128)"
+        // }
     }
 
 
