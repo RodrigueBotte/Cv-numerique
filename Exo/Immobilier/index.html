@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Immobilier</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="./script.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <!-- <img src="./assets/images/header/headerbg.jpg" alt="background-header" class="fond"> -->
+        <img src="./assets/images/header/logo.png" alt="Logo-Estate" class="logoEstate">
+        <p class="text1">Pour vendre mieux, <span style="color:#a2d23b"><br> voici l'astuce</span></p>
+        <p class="text2" style="color:white;"><span style="color: #ab64be;">Des honoraires
+                réduits</span><br> <span>1.2</span> % du prix de la vente* <br> seulement</p>
+        <p class="text3" style="font-size: 10px;">*Taux de 1.2% TTC pour un prix de vente supérieur ou égal à 159 999 €.
+            <br>
+            Honoraires d'agence forfaitaires de 1 899 € TTC pour un prix de vente inférieur à 159 999 €.
+        </p>
+        <button class="btn-header">En savoir plus</button>
+        <button class="btn-header-client">Espace client</button>
+        <div>
+            <i class="fa-brands fa-google-plus-g" style="color: #ffffff;"></i>
+            <i class="fa-brands fa-facebook" style="color: #ffffff;"></i>
+            <i class="fa-brands fa-twitter" style="color: #ffffff;"></i>
+        </div>
+        <img src="./assets/images/header/headerhouse.png" alt="Logo-maison" class="logoMaison">
+    </header>
+
+    <main>
+        <ul>
+            <li>Qui sommes-nous</li>
+            <li>Nos services</li>
+            <li>Rechercher un bien</li>
+            <li>Nos dernières offres</li>
+            <li>Nous contacter</li>
+        </ul>
+        <p>Qui sommes-nous?</p>
+        <p>Professionnels de l'immobilier depuis plus de 15 ans, nous sommes un intermédiaire entre vendeurs et
+            acquéreurs. <br>
+            Notre volonté est de mener à bien toute transaction dans le respect de chacun, en offrant un suvi sérieux
+            dans l'intérêt des deux parties <strong>à un coût très réduit de 1% HT du prix de vente.</strong></p>
+        <div class="icones">
+            <div><i class="fa-solid fa-plus ic1" style="color: #63E6BE;"></i>Des frais <br> d'agence réduits</div>
+            <div><i class="fa-solid fa-plus ic2" style="color: #63E6BE;"></i>Un service <br> de qualité</div>
+            <div><i class="fa-solid fa-plus ic3" style="color: #63E6BE;"></i>Des visites <br> ciblées</div>
+            <div><i class="fa-solid fa-plus ic4" style="color: #63E6BE;"></i>Des delais <br> raccourcis</div>
+        </div>
+        <button class="btn-main-savoir">En savoir + sur nos prestations</button>
+        <section>
+            Nos services en ligne
+            <div>
+                <div class="diag"><i class="fa-solid fa-stethoscope" style="color: #ac5fc2;"></i>
+                    <p>Diagnostics</p>
+                    <p>Identifiez en quelques clics les diagnostics immobiliers à effectuer pour la vente de votre bien.
+                    </p><button>En savoir +</button>
+                </div>
+                <div class="demande"><i class="fa-regular fa-handshake" style="color: #ac5fc2;"></i>
+                    <p>Demande de rendez-vous</p>
+                    <p>Prenez rendez-vous avec l'un de nos conseillers pour l'estimation et la mise en vente de votre
+                        bien</p><button>En savoir +</button>
+                </div>
+                <div class="simulateur"><i class="fa-solid fa-calculator" style="color: #ac5fc2;"></i>
+                    <p>Simulateurs</p>
+                    <p>Evaluez vos capacités d'emprunt. <br>Calculez le monte de votre prêt ou de vos mensualités.
+                        Estimez vos frais de notaire.</p><button>En savoir +</button>
+                </div>
+                <div class="finance"><i class="fa-solid fa-house-circle-check" style="color: #ac5fc2;"></i>
+                    <p>Demande de financement</p>
+                    <p>Laissez-nous vos coordonnées et un courtier vous contactera pour effectuer une étude de
+                        financement gratuite et sans engagement.</p><button>En savoir +</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <form action="" method="get" class="formulaire">
+            <p>Contactez-nous</p>
+            <div>
+                <div>
+                    <label for="civilite">Civilité *</label>
+                    <select name="civilite" id="civilite" required>
+                        <option value="M." selected>M.</option>
+                        <option value="Madame">Mme</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="civilite">Nom *</label>
+                    <input type="text" name="nom" id="nom" required>
+                </div>
+                <div>
+                    <label for="prenom">Prenom *</label>
+                    <input type="text" name="prenom" id="prenom" required>
+                </div>
+                <div>
+                    <label for="email">Adresse mail *</label>
+                    <input type="email" name="email" id="email" required>
+                </div>
+                <div>
+                    <label for="tel">Téléphone *</label>
+                    <input type="tel" name="tel" id="tel" required><br>
+                </div>
+            </div>
+            <div class="form">
+                <label for="mess">Message</label>
+                <textarea name="mess" id="mess" cols="60" rows="10">Message</textarea>
+                <p>Champs obligatoire *</p>
+            </div>
+            <input type="submit" value="Envoyer">
+        </form>
+        <div class="footer-bar">
+            <a href="#">Information légales</a>
+            <a href="#">Contact</a>
+            <a href="#">Plan du site</a>
+            <a href="#">Foire aux questions</a>
+            <a href="#">Mentions légales</a>
+        </div>
+        <p>Maquette: CAIO | Réalisation: RB</p>
+    </footer>
+</body>
+
+</html>
+
+<script src="https://kit.fontawesome.com/2ea3b82358.js" crossorigin="anonymous"></script>
