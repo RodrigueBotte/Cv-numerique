@@ -76,6 +76,31 @@
                 </div>
             </div>
         </section>
+        <div class="recherche">
+            <p>Que recherchez-vous?</p>
+            <form action="" method="get">
+                <div>
+                    <label for="bien">Type de bien</label>
+                    <select name="bien" id="bien">
+                        <option value="tous-type" selected>Tous type</option>
+                        <option value="appart">Appartement</option>
+                        <option value="maison">Maison</option>
+                        <option value="terrain">Terrain</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="localisation">Localisation</label>
+                    <input type="text" name="localisation" id="local">
+                </div>
+                <div>
+                    <label for="budget">Budget de </label>
+                    <input type="text" name="budget-min" id="budget">
+                    <label for="">à</label>
+                    <input type="text" name="budget-max" id="budget">
+                </div>
+            </form>
+            <button>Lancer la recherche</button>
+        </div>
     </main>
 
     <footer>
