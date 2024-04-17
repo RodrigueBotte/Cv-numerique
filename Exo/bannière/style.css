@@ -1,0 +1,51 @@
+.cookies {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    background-color: gray;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 3rem;
+    opacity: 1;
+    transition: 0.5s;
+
+    .cookies-btn {
+        display: flex;
+        .btn{
+            color: white;
+            padding: 1rem;
+            border: none;
+            border-radius: 10px;
+            &.btn-success{
+                background-color: #1E2337;
+            }
+            &.btn-deny{
+                background-color: grey;
+            }
+        }
+    }
+}
+.container{
+    
+    .bloc-btn{
+        width: 29vw;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .btn2{
+            padding: 1rem;
+            background-color: #b5b5b5;
+            border: none;
+            color: #1E2337;
+        }
+        .happy{
+            color: #f1bf2a;
+        }
+        .abonne{
+            background-color: #f1bf2a;
+            color: white;
+        }
+    }
+}
