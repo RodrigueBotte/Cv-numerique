@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regex</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="./script.js" defer></script>
+</head>
+
+<body>
+    <fieldset>
+        <legend>Coordonnés</legend>
+        <div class="coordonnees">
+            <label for="tel">Telephone :</label>
+            <input type="tel" id="tel" name="tel">
+            <label for="email">Email :</label>
+            <input type="email" name="email" id="email">
+        </div>
+    </fieldset>
+    <fieldset>
+        <legend>Identifiants</legend>
+        <div class="identifiant">
+            <label for="nom">Nom d'utilisateur :</label>
+            <input type="text" name="nom" id="nom">
+            <label for="mdp">Mot de Passe :</label>
+            <input type="password" name="mdp" id="mdp">
+            <div class="hidden">
+                <input type="checkbox" name="hidden" id="hidden" onclick="hid()">
+                <i class="fa-solid fa-eye"></i>
+            </div>
+            <span></span>
+            <label for="mdp2">Confirmation du Mot de Passe</label>
+            <input type="password" name="mdp2" id="mdp2">
+        </div>
+    </fieldset>
+</body>
+
+</html>
+
+<script src="https://kit.fontawesome.com/2ea3b82358.js" crossorigin="anonymous"></script>
