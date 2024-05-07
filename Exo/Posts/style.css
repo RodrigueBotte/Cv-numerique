@@ -1,0 +1,10 @@
+.post-titre{
+    font-size: 3rem;
+    color: orange;
+}
+.post-extrait{
+    font-size: 2rem;
+}
+.post-hashtag{
+    font-weight: 900;
+}
