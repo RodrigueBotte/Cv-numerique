@@ -1,0 +1,108 @@
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    .accordeon {
+        .question {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 2rem;
+            border-bottom: 1px solid #777;
+
+        }
+
+        .reponse {
+            color: #777;
+            background-color: #eee;
+            padding: 3rem;
+            display: none;
+        }
+
+        .visible {
+            display: block;
+        }
+    }
+
+    .produit-container {
+        width: 80%;
+        background-color: white;
+        color: grey;
+        display: flex;
+
+        .produit-images {
+            flex: 1;
+
+            .full-img-container {
+                height: 350px;
+                overflow: hidden;
+                text-align: center;
+                #full {
+                    
+                    width: 80%;
+                    height: 100%;
+                }
+            }
+
+            .vignettes-container {
+                display: flex;
+
+                .small {
+                    flex: 1;
+                    width: 30%;
+                    margin: 1rem;
+                }
+            }
+        }
+
+        .produit-infos {
+            flex: 1;
+            padding: 2rem;
+
+            h1 {
+                font-size: 4rem;
+            }
+
+            p.produit-prix {
+                font-size: 3rem;
+                margin: 2rem 0;
+            }
+            p.description{
+                font-size: 2rem;
+            }
+            button.btn-add{
+                background-color: black;
+                color: white;
+                padding: 2rem;
+                outline: none;
+                border: none;
+                margin: 2rem 0;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .container{
+        height: auto;
+    }
+    .produit-container{
+        flex-direction: column;
+    }
+    .full-img-container{
+        height: auto;
+    }
+    .vignettes-container{
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+    .small{
+        width: 50%;
+    }
+}

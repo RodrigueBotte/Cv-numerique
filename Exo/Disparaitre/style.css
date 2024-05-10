@@ -1,17 +1,22 @@
-*, ::before, ::after{
-margin:0;
-padding:0;
-box-sizing: border-box;
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-body{
-    .menuBurger{
-        .navbar-desktop{
+
+body {
+    .menuBurger {
+        .navbar-desktop {
             background-color: grey;
         }
-        .navbar-mobile{
-            
+
+        .navbar-mobile {
+
             display: none;
-            i{
+
+            i {
                 position: fixed;
                 top: 9px;
                 right: 15px;
@@ -19,7 +24,8 @@ body{
                 color: white;
                 z-index: 9999;
             }
-            .modal{
+
+            .modal {
                 top: -100vh;
                 background-color: #f92995;
                 height: 100vh;
@@ -28,13 +34,15 @@ body{
                 width: 100%;
                 opacity: 0.9;
                 transition: top 0.9s;
-                .navbar-mobile-list{
+
+                .navbar-mobile-list {
                     display: flex;
                     height: 100vh;
                     flex-direction: column;
                     align-items: center;
                     justify-content: center;
-                    a{
+
+                    a {
                         font-size: 5rem;
                         font-weight: 800;
                         color: #1e2337;
@@ -42,21 +50,109 @@ body{
                     }
                 }
             }
-            .change-modal{
+
+            .change-modal {
                 top: 0;
+            }
+        }
+    }
+
+    .container {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #1e2337;
+    }
+    .part2 {
+        background-color: orange;
+    }
+
+    .part3 {
+        background-color: orangered;
+    }
+    .modal-container{
+        height: 100vh;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: rgba(136, 222, 136, .8);
+        display: none;
+        justify-content: center;
+        align-items: center;
+        .modal-detail{
+            background-color: white;
+            width: 50%;
+            text-align: center;
+            position: relative;
+            padding: 3rem;
+            color: #1e2337;
+            i{
+                position: absolute;
+                top: -2px;
+                right: -2px;
+                font-size: 2rem;
+                padding: 1rem;
+                color: grey;
+            }
+            .modal-titre{
+                font-size: 3rem;
+                font-weight: 90;
+                margin-bottom: 1rem;
+            }
+            .code{
+                background-color: black;
+                color: white;
+                font-family: monospace;
+                padding: 1rem;
+                display: none;
+            }
+            .btn-success{
+                height: 4rem;
+                background-color: rgba(231, 171, 61, 1);
+                color: white;
+                padding: 1rem;
+                border: none;
+                width: 100%;
+            }
+        }
+    }
+    .container2{
+        background-color: #eee;
+        .btn2{
+            border: none;
+            color: white;
+            padding: 1rem;
+            margin: 2rem;
+            background-color: green;
+        }
+        .container-notif{
+            position: fixed;
+            bottom: 0px;
+            right: 0px;
+            margin: 3rem;
+            font-size: 1.2rem;
+            .toast{
+                padding: 1rem;
+                margin: .7rem;
+                border: 1px solid rgb(181, 181, 181);
+                border-left: 3px solid green;
             }
         }
     }
 }
 
 @media screen and (max-width : 700px) {
-    body>.menuBurger>.navbar-mobile{
+    body>.menuBurger>.navbar-mobile {
         display: block;
     }
-    .navbar-desktop{
+
+    .navbar-desktop {
         display: none;
     }
-    body{
+
+    body {
         background-color: black;
     }
 }
