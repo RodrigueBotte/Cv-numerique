@@ -10,9 +10,28 @@ const icone2 = document.querySelector(".fa-moon")
 const container = document.querySelector(".container-switch")
 const p = document.querySelector(".dark")
 
+// valeur pour le local storage
+let valeurCle = localStorage.getItem('bannière')
+console.log(valeurCle, 'valeur de la cle');
+
 btnSuccess.addEventListener('click', function(){
+    localStorage.setItem('bannière', 'oui')
     cookies.style.opacity = "0"
 })
+
+// fonction piur vérifier le local storage
+function check() {
+    if (valeurCle) {
+        console.log('stockage existe');
+        cookies.remove()
+    }
+    else{
+        console.log("stockage n'existe pas");
+    }
+}
+check()
+// -----------------------------------------
+
 icone.addEventListener('click', function(){
     icone.classList.toggle('fa-face-smile')
     icone.classList.toggle('happy')

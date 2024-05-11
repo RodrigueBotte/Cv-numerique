@@ -1,0 +1,50 @@
+*, ::before, ::after{
+margin:0;
+padding:0;
+box-sizing: border-box;
+}
+.container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(./images/soiree-medievale-prague-ceetiz.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#form{
+    display: flex;
+    align-items: center;
+}
+.field{
+    margin: 1rem;
+}
+.field select, input[type=date]{
+    height: 6rem;
+    width: 20rem;
+    font-family: Arial;
+}
+button{
+    width: 4rem;
+    height: 4rem;
+    border: 1px solid white;
+    border-radius: 50%;
+    background-color: #e1a026;
+    color: white;
+}
+.liste-resultats{
+    display: flex;
+}
+.item{
+    flex: 1;
+    background-color: rgba(255, 255, 255, 0724);
+    color: black;
+    margin: 2rem;
+    padding: 2rem;
+    border-radius: 5px;
+}
+.item-pays{
+    font-weight: bold;
+    text-transform: uppercase;
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site de voyage</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="./script.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <form action="" id="form">
+            <div class="field">
+                <select name="" id="pays">
+                    <option value="dernierBar">Dernier bar avant la fin du monde</option>
+                    <option value="carreHall">Carré des halles</option>
+                    <option value="atomik">L'Atomik</option>
+                    <option value="capsule">La Capsule</option>
+                </select>
+            </div>
+            <div class="field">
+                <input type="date" id="start" value="2021-06-02" min="2021-06-01">
+            </div>
+            <div class="field">
+                <input type="date" id="end" value="2021-06-02" min="2021-06-01">
+            </div>
+            <button type="submit"><i class="fas fa-plane"></i></button>
+        </form>
+        <div class="list-resultats"></div>
+    </div>
+</body>
+</html>
