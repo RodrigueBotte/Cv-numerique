@@ -1,0 +1,57 @@
+*, ::before, ::after{
+margin:0;
+padding:0;
+box-sizing: border-box;
+}
+#todo-list{
+    background-color: white;
+    color: #1e2337;
+    width: 50%;
+    padding: 4rem;
+    input{
+        width: 100%;
+        color: rgb(44, 43, 43);
+        font-size: 2rem;
+        border: 1px solid grey;
+        padding: 1rem;
+        border: 1px dashed rgb(105, 19, 105);
+        border-width: 0px 0px 1px 0px;
+    }
+}
+#form{
+    display: flex;
+}
+button{
+    border: none;
+    width: 4rem;
+    height: 4rem;
+
+}
+.item{
+    text-align: justify;
+    margin: 1rem;
+    background-color: rgb(222, 221, 221);
+    font-size: 2rem;
+    color: rgb(105, 19, 105);
+    display: flex;
+    align-items: center;
+}
+.item p{
+    flex: 1;
+    padding: 2rem;
+}
+.item button{
+    font-size: 2rem;
+    margin: 1rem;
+}
+.item button.btn-archive{
+    font-size: 2rem;
+    background-color: rgb(128, 205, 128);
+}
+.item button.btn-delete{
+    font-size: 2rem;
+    background-color: rgb(188, 102, 102);
+}
+.done{
+    text-decoration: line-through;
+}
