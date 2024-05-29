@@ -18,8 +18,14 @@ export class AppComponent implements OnInit {
     this.dataservice.getData().subscribe(response =>{
       this.data = response;
       console.log(this.data);
-      
     })
+  }
+  // liste des différents genres du film
+  genreMovie(){
+    for (let i = 0; i < this.data.genres.length; i++) {
+      const element = this.data.genres[i].name;
+      console.log(element);
+    }
   }
 }
 
