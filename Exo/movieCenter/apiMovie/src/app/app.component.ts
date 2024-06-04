@@ -14,6 +14,7 @@ export class AppComponent implements OnInit {
   title = 'Movie Center';
   data: any;
   url: string = "";
+  img: string = "";
   constructor(private dataservice: DataService, private sanitizer: DomSanitizer){}
 
 
@@ -25,7 +26,10 @@ export class AppComponent implements OnInit {
       
       // sélection d'une chiffre aléatoire parmis la liste des extraits liés au film
       const m = Math.floor(Math.random()*this.data.videos.results.length)
-        this.url = this.data.videos.results[m].key;
+      this.url = this.data.videos.results[m].key;
+
+      // Affichage du poster du film
+      this.img = 'https://image.tmdb.org/t/p/w300/'+this.data.poster_path;
     })
   }
 

@@ -10,6 +10,6 @@ export class DataService {
   constructor(private http: HttpClient) { }
 
   getData(): Observable<any>{
-    return this.http.get('https://api.themoviedb.org/3/movie/11?api_key=b92b86a72a65feda4158eeba3d3af80d&append_to_response=videos,images')
+    return this.http.get('https://api.themoviedb.org/3/movie/11799?api_key=b92b86a72a65feda4158eeba3d3af80d&append_to_response=videos,images&language=fr')
   }
 }
