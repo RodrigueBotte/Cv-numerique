@@ -1,0 +1,46 @@
+<body>
+    <header>
+      <div class="container">
+        <div class="barNav">
+          <a href="accueil">Accueil</a>
+          <a href="film">Film</a>
+          <a href="serie">Série</a>
+          <a href="tv">Série TV</a>
+        </div>
+        <div class="connexion">
+          <a href="connexion">Connexion</a>
+          <a href="inscription">Inscription</a>
+        </div>
+      </div>
+    </header>
+  
+    <nav>
+      <div class="movie">
+        <img [src]='img' alt="Affiche du film">
+        <div class="detailMovie">
+          <h2>{{data.title}}</h2>
+          <p>{{data.tagline}}</p>
+          @if (data.adult === true) {
+          <p>Film interdit au moins de 18ans </p>
+          }
+          <p><span style="text-decoration: underline;">Resume:</span> {{data.overview}}</p>
+  
+          <!-- Liste des genres -->
+          @if(data)
+          {
+          <ul class="genres">
+            @for(genre of data.genres; track $index)
+            {
+            <li>{{genre.name}}</li>
+            }
+          </ul>
+        }
+        <p>Film sorti le {{data.release_date}}</p>
+        </div>
+      </div>
+        <iframe [src]='safeUrl' width="420" height="315"></iframe>
+  
+  
+    </nav>
+  </body>
+  
